@@ -1,0 +1,33 @@
+body {
+    margin: 0px;
+}
+
+#navbar {
+    display: grid;
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    height: 7vh;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+#navbar > #buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#navbar > #icon {
+    display: block;
+    margin: auto 0;
+    justify-self: left;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: rgb(11, 19, 17);
+}
+
+#navbar > #icon {
+    margin-left: 5vw;
+}

@@ -1,0 +1,127 @@
+html {
+    color: rgb(26, 45, 40);
+
+    margin-bottom: 1.2em;
+    line-height: 1.7;
+}
+
+#header {
+    display: block;
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    height: 10vw;
+    overflow: hidden;
+}
+
+#section1 {
+    display: grid;
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    grid-template-columns: 2fr 6fr 2fr;
+}
+
+#section2 {
+    display: grid;
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    grid-template-columns: 2fr 6fr 2fr;
+}
+
+#section3 {
+    display: grid;
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    grid-template-rows: 11vh 1fr 1fr 1fr 1fr;
+}
+
+#section1 > * {
+    grid-column-start: 2;
+}
+#section2 > * {
+    grid-column-start: 2;
+}
+
+#section_line {
+    display: block;
+    background-color: black;
+    height: 0.1vh;
+    width: 60vw;
+    transform: translateY(-2vh);
+    margin: 0;
+}
+
+
+
+#pair > img {
+    display: block;
+    background-color: rgba(70, 59, 59,0.5);
+}
+
+#pair H3 {
+    margin: 0;
+    margin-bottom: 0.2vh;
+    margin-top: 0vh;
+}
+#pair p {
+    margin: 0;
+    margin-bottom: 1vh;
+}
+
+.block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1vw;
+}
+
+#section1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(70, 59, 59,0.5);
+    border-radius: 2%;
+}
+
+#section1 p:first-of-type::first-letter {
+  float: left;
+  font-size: 2rem;
+  line-height: 1;
+  padding-right: 4px;
+  color: #4a3c28;
+  font-family: 'Georgia', serif;
+  margin-top: 8px
+}
+ 
+#section3 > p {
+    margin: 20vw;
+    margin-top: 0;
+    margin-bottom: 1vh;
+}
+
+#section2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(70, 59, 59,0.5);
+    border-radius: 2%
+}
+
+#section2 p {
+    margin-top: 0;
+}
+
+#section3 > div {
+    display: block;
+    margin: 0 auto;
+}
+
+#header > img {
+    width: 100vw;
+    height: 20vh;
+    object-fit: cover;
+    background-color: rgba(70, 59, 59,0.5);
+    object-position: 0% 49%;
+}
+
+#marg {
+    margin-top: 0;
+}
+
+#sectiondiv > H1 {
+    margin-top: 2vh;
+}
