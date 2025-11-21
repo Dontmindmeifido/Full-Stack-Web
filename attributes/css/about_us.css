@@ -40,10 +40,10 @@ html {
 #section_line {
     display: block;
     background-color: black;
-    height: 0.1vh;
+    height: 0.2vh;
     width: 60vw;
-    transform: translateY(-2vh);
-    margin: 0;
+    margin-top: -2vh;
+    margin-bottom: 2vh;
 }
 
 
@@ -89,7 +89,7 @@ html {
  
 #section3 > p {
     margin: 20vw;
-    margin-top: 0;
+    margin-top: 1vh;
     margin-bottom: 1vh;
 }
 
@@ -105,11 +105,6 @@ html {
     margin-top: 0;
 }
 
-#section3 > div {
-    display: block;
-    margin: 0 auto;
-}
-
 #header > img {
     width: 100vw;
     height: 20vh;
@@ -122,6 +117,19 @@ html {
     margin-top: 0;
 }
 
+#sectiondiv {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 100%;
+}
+
 #sectiondiv > H1 {
     margin-top: 2vh;
+}
+
+@media (max-width: 700px) {
+    H1 { font-size: 100%; }
+    H3 { font-size: 60%; }
+    H4 { font-size: 60%; }
+    p { font-size: 50%; }
 }

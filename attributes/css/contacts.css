@@ -49,18 +49,6 @@ input:focus, textarea:focus {
   outline: none;
 }
 
-button {
-  background: #a08b65;
-  color: #fff;
-  border: none;
-  padding: 0.9rem;
-  border-radius: 5px;
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
 button:hover {
   background: #8a7657;
 }
@@ -75,3 +63,76 @@ button:hover {
   margin-bottom: 1rem;
   color: #2d2b28;
 }
+
+
+.send-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.send-toggle {
+  width: 100%;
+  padding: 0.9rem;
+  background: #a08b65;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: left;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.send-toggle::after {
+  content: "▾";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  font-size: 0.9rem;
+  transform: translateY(-50%);
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.send-dropdown:hover .send-toggle::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.send-menu {
+  display: none;
+  max-width: 800px;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  background: #fdfbf8;
+  border: 1px solid #d2c9b8;
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  z-index: 10;
+}
+
+.send-dropdown:hover .send-menu {
+  display: block;
+}
+
+.send-menu button {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  color: #3a3a3a;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.send-menu button:hover {
+  background: #f0e9df;
+}
+

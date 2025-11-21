@@ -26,6 +26,14 @@ body {
 #navbar a {
     text-decoration: none;
     color: rgb(11, 19, 17);
+    font-size: 100%;
+}
+
+@media (max-width: 800px) {
+    #navbar a { font-size: 80%; }
+}
+@media (max-width: 550px) {
+    #navbar a { font-size: 60%; }
 }
 
 #navbar > #icon {

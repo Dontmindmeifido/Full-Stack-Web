@@ -16,7 +16,7 @@
             </div>
         </div>
 
-        <section id="contact">
+<section id="contact">
   <h2>Write to Us</h2>
   <p>
     Whether you seek our blends, wish to share a story, or simply want to say hello —
@@ -34,7 +34,13 @@
     <label for="message">Your Message</label>
     <textarea id="message" name="message" rows="6" required></textarea>
 
-    <button type="submit">Send Message</button>
+      <div class="send-dropdown">
+      <button class="send-toggle">Send Message</button>
+      <div class="send-menu">
+        <button type="submit">This is a high priority message</button>
+        <button type="submit">This is not a high priority message</button>
+      </div>
+    </div>
   </form>
 
   <div class="contact-info">

@@ -20,23 +20,20 @@ html, body {
     z-index: -1;
 }
 
-#section1 > div {
+#section1 > H1 {
     z-index: 1;
-    font-size: 1000%;
+    font-size: 10vw;
     color: rgb(255, 255, 255);
     margin-top: 0vh;
-    margin-left: -45vw;
-
+    margin-right: 30vw;
 }
 
 #section2 {
     display: block;
     background-color: rgb(255, 255, 255);
 
-    background: linear-gradient(rgb(227, 234, 227), white);
-
     width: 100vw;
-   padding-top: 2%;
+    padding-top: 2%;
 }
 
 #navbar {
@@ -72,7 +69,7 @@ html, body {
     box-shadow: 0px 10px rgba(133, 118, 118, 0.231);
 
     width: 20vw;
-    height: 40vh;
+    font-size: 1vw;
 
     overflow: hidden;
     border-radius: 10%;
@@ -81,6 +78,10 @@ html, body {
 
     transition-property: transform box-shadow;
     transition-duration: 1s;
+}
+
+@media (max-width: 500px) {
+    #customer_card {font-size: 1.5vw; height: 40vw;}
 }
 
 #customer_card:nth-child(1) {
@@ -113,8 +114,15 @@ html, body {
 #customer_card > p {
     margin-top: 1%;
     margin-left: 2%;
-
 }
+
+#customer_card:nth-child(3) > p {
+    margin-top: 1%;
+    margin-left: 2%;
+
+    margin-bottom: -100%;
+}
+
 
 #customer_section_1 {
     display: flex;
@@ -153,7 +161,7 @@ html, body {
 #section_line {
     display: block;
     background-color: black;
-    height: 0.1vh;
+    height: 0.25vh;
     width: 72.8vw;
     margin: 0 auto;
     margin-top: -0.5%;
@@ -208,38 +216,6 @@ html, body {
     display: flex;
     justify-content: space-evenly;
 }
-
-#overflow_left {
-    display: block;
-    position: absolute;
-    width: 20%;
-    height: 60%;
-
-    transform: translateY(-5vh);
-
-    left: 0;
-
-    background-color: rgb(255, 255, 255);
-
-    z-index: 1;
-}
-
-#overflow_right {
-    display: block;
-    position: absolute;
-    width: 20%;
-    height: 60%;
-
-    transform: translateY(-5vh);
-
-    right: 0;
-
-    background-color: rgb(255, 255, 255);
-
-    z-index: 1;
-}
-
-
 
 @keyframes scrolling_products_animation {
     0% {

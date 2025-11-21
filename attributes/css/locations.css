@@ -17,7 +17,6 @@
     margin: 0 auto;
 }
 
-/* Map */
 #greece-image {
     position: relative;
 }
@@ -30,7 +29,6 @@
     margin-left: 20%;
 }
 
-/* Location blocks positioned on the map */
 .location {
     position: absolute;
     width: 20vw;
@@ -51,13 +49,11 @@
     margin: 0.5vh 0;
 }
 
-/* Small label under each */
 .mini-info {
     font-size: 0.85rem;
     opacity: 0.8;
 }
 
-/* Position each location over map roughly */
 .location.athens {
     bottom: 0%;
     left: 0%;
@@ -85,4 +81,37 @@
     height: 25vh;
 
     border-radius: 7%;
+}
+
+p {
+    font-size: 1vw !important;
+}
+H3 {
+    font-size: 2vw !important;
+}
+H1 {
+    font-size: 2vw !important;
+}
+
+@media (min-width: 700px) {
+    p {
+    font-size: 0.8vw !important;
+    }
+    H3 {
+        font-size: 0.9vw !important;
+    }
+    H1 {
+        font-size: 2vw !important;
+    }
+}
+@media (min-width: 1800px) {
+    p {
+    font-size: 0.6vw !important;
+    }
+    H3 {
+        font-size: 0.7vw !important;
+    }
+    H1 {
+        font-size: 1.9vw !important;
+    }
 }
